@@ -33,7 +33,7 @@ export default async function Navbar() {
                   href="/bookings" 
                   className="text-slate-600 hover:text-brand-600 font-medium transition-colors"
                 >
-                  My Bookings
+                  {session.user.role==='admin'?'All Booking':'My Bookings'}
                 </Link>
                 <div className="flex items-center gap-3 bg-slate-50 px-3 py-1.5 rounded-full border border-slate-200">
                   <div className="w-6 h-6 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center text-xs font-bold">
