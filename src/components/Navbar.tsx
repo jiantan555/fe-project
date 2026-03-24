@@ -2,6 +2,8 @@
 
 import { useSession } from "next-auth/react";
 import { useState } from "react";
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "@/lib/authOptions";
 import Link from "next/link";
 import LogoutButton from "./LogoutButton";
 
